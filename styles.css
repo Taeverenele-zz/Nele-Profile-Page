@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #0499ff;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  font: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
+  font-size: 35px;
+}
+.navbar-links ul {
+  margin-top: 5px;
+  padding: 0;
+  display: flex;
+}
+.navbar-links li {
+  list-style: none;
+  
+}
+.navbar-links li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  transition: all .5s;
+
+}
+.navbar-links li a:hover {
+  color: white
+}
+
+.toggle-button {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.social-links {
+  padding-top: 10px;
+  padding-right: 20px;
+}
+.social-icon {
+  fill: #0499ff;
+  opacity: .75;
+  height: 40px;
+  width: 40px;
+}
+.social-icon:hover {
+  fill: #0499ff;
+  opacity: 1;
+}
+header {
+  background: url('./img/landscape.jpg') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  font: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+  color: #222;
+  min-height: 100%;
+  padding-top: 20px;
+  font-size: 50px;
+}
+header .profile-image {
+  margin-top: 100px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all .5s;
+}
+header .profile-image:hover {
+  transform: scale(1.5) rotate(360deg);
+}
+#about, #portfolio {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 40px;
+}
+#about p {
+  line-height: 30px;
+}
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 10px;
+  display: inline-block;
+  color: white;
+  padding: 5px 10px;
+  margin: 10px 2px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.card {
+  border: 2px solid #e7e7e7;
+  border-radius: 4px;
+  margin: 10px;
+  width: 400px;
+}
+.card-description {
+  background-color: rgb(230, 220, 220);
+  padding: 10px;
+  height:160px;
+}
+
+.sub-title {
+  font: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
+  font-size: 60px;
+}
+
+#contact {
+    padding-bottom: 30px;
+}
+
+
+@media (max-width: 780px) {
+
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    margin-top: 45px;
+
+  }
+  .navbar-links ul {
+    flex-direction: column;
+  }
+  .navbar-links ul li {
+    background-color: #000;
+  }
+  .navbar-links li a {
+    padding: 10px;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+  .social-links {
+    position: absolute;
+    right: 5px;
+  }
+}
+
+
+  
